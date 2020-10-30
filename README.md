@@ -99,17 +99,8 @@ Deadlock: When you trying to read or write data from the channel but the channel
 	When you create a method in your code the receiver and receiver type must present in the same package. 
 	And you are not allowed to create a method in which the receiver type is already defined in another package including inbuilt type like int, string, etc. 
 	If you try to do so, then the compiler will give an error.
-===================
 
-Structure
-==========
-	- we can compare two structs, there are two ways:- 
-		- with the help of == operator
-		- with the help of reflect package (reflect.DeepEqual()) 
-	- we can have nested structs.
-	- we can have anonymas structs and anonymous fields in struct as well.
-	
-==============
+
 Array and slices
 =======
 	- In golang arrays are of fixed length but slices arent.
@@ -148,13 +139,17 @@ Comparing two slices:-
 
 	- We can also check the equality of the slices using Equal() method (only for byte slices)
 	- Equal() returns either true or false.
-
-- We can aslo trim the byte slice using Trim()
-- We can also perform splitting functionality using Split().
-
+        - We can also trim the byte slice using Trim()
+        - We can also perform splitting functionality using Split().
 
 
-==========================================================================
+Structure
+==========
+	- We can compare two structs, there are two ways:- 
+		- with the help of == operator
+		- with the help of reflect package (reflect.DeepEqual()) 
+	- We can have nested structs.
+	
 String
 ===========
 		
@@ -217,8 +212,8 @@ Interfaces
 		- It simply means that extracting the values of the interface.
 
 	
-Concurrency:=
-==============
+Concurrency
+===========
 	- Goroutines
 	=============
 		- Golang has the special feature named Goroutines (It is a lightweighted thread)
